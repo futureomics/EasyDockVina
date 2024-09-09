@@ -12,3 +12,17 @@ https://jcheminf.biomedcentral.com/articles/10.1186/s13321-023-00772-2
 
 
 ![alt1_3_1_3_1](https://github.com/user-attachments/assets/8eabcd5b-9f37-4711-8387-e22a9da3b957)
+
+
+
+
+###Parameters:
+    --receptor file.pdbqt                   Receptor should be prepared and in pdbqt format.
+    --ligands ./ligands/                    Ligands folder, all ligands should be in pdbqt format.
+    --config config.txt                     Config file should only contain search box center and size.
+    --output docking_result.txt             All docking results will be written on the file specified.
+
+
+####Config.txt file should contain only:
+center_x , center_y , center_z 
+size_x , size_y , size_z 
