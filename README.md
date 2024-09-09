@@ -17,6 +17,9 @@ https://jcheminf.biomedcentral.com/articles/10.1186/s13321-023-00772-2
 
 
 ###Parameters:
+   
+    
+    
     --receptor file.pdbqt                   Receptor should be prepared and in pdbqt format.
     
     
@@ -33,5 +36,9 @@ https://jcheminf.biomedcentral.com/articles/10.1186/s13321-023-00772-2
 
 
 ####Config.txt file should contain only:
+
+
 center_x , center_y , center_z 
+
+
 size_x , size_y , size_z 
