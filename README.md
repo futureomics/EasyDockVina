@@ -1,44 +1,46 @@
+A new GUI version is available with many new features, check out: https://youtube.com/watch?v=oqKsSJ_uWGs
+<br/>
 # EasyDockVina
-EasyDockVina is a free tool to perform multiple receptor-ligand docking with AutoDockVina.
-EasyDock supports popular docking programs, namely Autodock Vina, gnina, and smina.
-https://jcheminf.biomedcentral.com/articles/10.1186/s13321-023-00772-2
+
+/////////////////////////////////////////////////////////////////////////<br/>
+<br/>
+
+        - #EasyDockVina is a free tool to perform multiple receptor-ligand
+          docking with AutoDockVina.	
+        - Programmed By AhmedElTijani AKA S3cr3tSDN	
+<br/>
+/////////////////////////////////////////////////////////////////////////<br/>
 
 
-![image](https://github.com/user-attachments/assets/97b78de9-925e-4eb8-8b7f-a9f37b277f14)
+[+] Tool Usage:
+
+        EasyDockVina dock [parameters]
+
+[+] Parameters:
+
+        --receptor file.pdbqt                   Receptor should be prepared and in pdbqt format.
+        --ligands ./ligands/                    Ligands folder, all ligands should be in pdbqt format.
+        --config config.txt                     Config file should only contain search box center and size.
+        --output docking_result.txt             All docking results will be written on the file specified.
+
+[+] Example:
+
+        EasyDockVina dock --receptor e2cr.pdbqt --ligands ./ligands/ --config config.txt --output results.txt
+        
+        
+Config.txt file should contain only:<br/>
+center_x = XXXXXX<br/>
+center_y = YYYYYY<br/>
+center_z = ZZZZZZ<br/>
+size_x = XXXXXX<br/>
+size_y = YYYYYY<br/>
+size_z = ZZZZZZ <br/>
 
 
-![docker_aim](https://github.com/user-attachments/assets/4e93ac7f-5382-4bff-b6bd-c0c9155c80bd)
+this tool will only work on windows machines, linux version is on the way.<br/>
+Please report any bug to s3cr3tsdn@gmail.com<br/>
+if you need help to configure EasyDockVina to run on a webserver, contact me at s3cr3tsdn@gmail.com<br/>
 
+# Citation:
 
-
-![alt1_3_1_3_1](https://github.com/user-attachments/assets/8eabcd5b-9f37-4711-8387-e22a9da3b957)
-
-
-
-
-###Parameters:
-   
-    
-    
-    --receptor file.pdbqt                   Receptor should be prepared and in pdbqt format.
-    
-    
-    --ligands ./ligands/                    Ligands folder, all ligands should be in pdbqt format.
-    
-    
-    
-    
-    --config config.txt                     Config file should only contain search box center and size.
-    
-    
-    
-    --output docking_result.txt             All docking results will be written on the file specified.
-
-
-####Config.txt file should contain only:
-
-
-center_x , center_y , center_z 
-
-
-size_x , size_y , size_z 
+Ahmed ElTijani, Mazin Yousif Alsafi, & Ahmed Faisal Ahmed. (2019, September 21). EasyDockVina: Graphical Interface for Ligand Optimization and High Throughput Virtual Screening with Vina (Version 2.2). Zenodo. http://doi.org/10.5281/zenodo.3732170
