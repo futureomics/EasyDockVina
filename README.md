@@ -11,3 +11,4 @@ EasyDockVina is a free tool to perform multiple receptor-ligand docking with Aut
 
 
 
+![alt1_3_1_3_1](https://github.com/user-attachments/assets/8eabcd5b-9f37-4711-8387-e22a9da3b957)
