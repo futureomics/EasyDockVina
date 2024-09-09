@@ -1,7 +1,7 @@
 # EasyDockVina
 EasyDockVina is a free tool to perform multiple receptor-ligand docking with AutoDockVina.
-
-
+EasyDock supports popular docking programs, namely Autodock Vina, gnina, and smina.
+https://jcheminf.biomedcentral.com/articles/10.1186/s13321-023-00772-2
 
 
 ![image](https://github.com/user-attachments/assets/97b78de9-925e-4eb8-8b7f-a9f37b277f14)
