@@ -1,20 +1,11 @@
-A new GUI version is available with many new features, check out: https://youtube.com/watch?v=oqKsSJ_uWGs
-<br/>
-# EasyDockVina
-
-/////////////////////////////////////////////////////////////////////////<br/>
-<br/>
 
         - #EasyDockVina is a free tool to perform multiple receptor-ligand
           docking with AutoDockVina.	
-        - Programmed By AhmedElTijani AKA S3cr3tSDN	
+        - EasyDock supports popular docking programs, namely Autodock Vina, gnina, and smina.	
 <br/>
 /////////////////////////////////////////////////////////////////////////<br/>
 
-
-[+] Tool Usage:
-
-        EasyDockVina dock [parameters]
+![965d62_d33342f5e56c446684070f46a65339d6~mv2](https://github.com/user-attachments/assets/0b02b8f8-0990-4a21-a543-6f22fdae3b89)
 
 [+] Parameters:
 
@@ -25,22 +16,14 @@ A new GUI version is available with many new features, check out: https://youtub
 
 [+] Example:
 
-        EasyDockVina dock --receptor e2cr.pdbqt --ligands ./ligands/ --config config.txt --output results.txt
+        EasyDockVina dock --receptor 1mq4.pdbqt --ligands ./ligands/ --config config.txt --output results.txt
         
         
 Config.txt file should contain only:<br/>
-center_x = XXXXXX<br/>
-center_y = YYYYYY<br/>
-center_z = ZZZZZZ<br/>
-size_x = XXXXXX<br/>
-size_y = YYYYYY<br/>
-size_z = ZZZZZZ <br/>
+center_x = <br/>
+center_y = <br/>
+center_z = <br/>
+size_x = <br/>
+size_y = <br/>
+size_z =  <br/>
 
-
-this tool will only work on windows machines, linux version is on the way.<br/>
-Please report any bug to s3cr3tsdn@gmail.com<br/>
-if you need help to configure EasyDockVina to run on a webserver, contact me at s3cr3tsdn@gmail.com<br/>
-
-# Citation:
-
-Ahmed ElTijani, Mazin Yousif Alsafi, & Ahmed Faisal Ahmed. (2019, September 21). EasyDockVina: Graphical Interface for Ligand Optimization and High Throughput Virtual Screening with Vina (Version 2.2). Zenodo. http://doi.org/10.5281/zenodo.3732170
