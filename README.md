@@ -13,7 +13,13 @@
 
 
 
-![blinddock-gif-small](https://github.com/user-attachments/assets/03a75742-abbf-4969-abb9-d4fda53572cc)
+
+![blinddock-gif-small](https://github.com/user-attachments/assets/72b1115b-521c-4753-a268-6c038cfdb55c)
+
+
+
+
+
 
 
 [+] Parameters:
