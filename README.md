@@ -1,26 +1,20 @@
+A new GUI version is available with many new features, check out: https://youtube.com/watch?v=oqKsSJ_uWGs
+<br/>
+# EasyDockVina
+
+/////////////////////////////////////////////////////////////////////////<br/>
+<br/>
 
         - #EasyDockVina is a free tool to perform multiple receptor-ligand
           docking with AutoDockVina.	
-        - EasyDock supports popular docking programs, namely Autodock Vina, gnina, and smina.	
+        - Programmed By AhmedElTijani AKA S3cr3tSDN	
 <br/>
 /////////////////////////////////////////////////////////////////////////<br/>
 
-![965d62_d33342f5e56c446684070f46a65339d6~mv2](https://github.com/user-attachments/assets/0b02b8f8-0990-4a21-a543-6f22fdae3b89)
 
+[+] Tool Usage:
 
-
-![docker_aim](https://github.com/user-attachments/assets/97162be8-b073-41ce-9eae-6fb8255debfc)
-
-
-
-
-![blinddock-gif-small](https://github.com/user-attachments/assets/72b1115b-521c-4753-a268-6c038cfdb55c)
-
-
-
-
-
-For Tutorial visit https://www.youtube.com/@Bioinformatics_Made_Easy 
+        EasyDockVina dock [parameters]
 
 [+] Parameters:
 
@@ -31,10 +25,22 @@ For Tutorial visit https://www.youtube.com/@Bioinformatics_Made_Easy
 
 [+] Example:
 
-        EasyDockVina dock --receptor 1mq4.pdbqt --ligands ./ligands/ --config config.txt --output results.txt
+        EasyDockVina dock --receptor e2cr.pdbqt --ligands ./ligands/ --config config.txt --output results.txt
         
         
 Config.txt file should contain only:<br/>
-center_x , center_y , center_z = <br/>
-size_x , size_y , size_z =  <br/>
+center_x = XXXXXX<br/>
+center_y = YYYYYY<br/>
+center_z = ZZZZZZ<br/>
+size_x = XXXXXX<br/>
+size_y = YYYYYY<br/>
+size_z = ZZZZZZ <br/>
 
+
+this tool will only work on windows machines, linux version is on the way.<br/>
+Please report any bug to s3cr3tsdn@gmail.com<br/>
+if you need help to configure EasyDockVina to run on a webserver, contact me at s3cr3tsdn@gmail.com<br/>
+
+# Citation:
+
+Ahmed ElTijani, Mazin Yousif Alsafi, & Ahmed Faisal Ahmed. (2019, September 21). EasyDockVina: Graphical Interface for Ligand Optimization and High Throughput Virtual Screening with Vina (Version 2.2). Zenodo. http://doi.org/10.5281/zenodo.3732170
