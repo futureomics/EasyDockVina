@@ -1,0 +1,105 @@
+<?php
+$banner = <<<EOD
+/////////////////////////////////////////////////////////////////////////
+
+ _____                ____             _   __     ___             
+| ____|__ _ ___ _   _|  _ \  ___   ___| | _\ \   / (_)_ __   __ _ 
+|  _| / _` / __| | | | | | |/ _ \ / __| |/ /\ \ / /| | '_ \ / _` |
+| |__| (_| \__ \ |_| | |_| | (_) | (__|   <  \ V / | | | | | (_| |
+|_____\__,_|___/\__, |____/ \___/ \___|_|\_\  \_/  |_|_| |_|\__,_|
+                |___/     version 1.1                                        
+	- EasyDockVina is a free tool to perform multiple Receptor-Ligand
+	  docking with AutoDockVina.
+	- Programmed By AhmedElTijani AKA S3cr3tSDN
+
+/////////////////////////////////////////////////////////////////////////
+
+
+EOD;
+
+echo $banner;
+$usage = <<<EOD
+
+[+] Tool Usage:
+
+	EasyDockVina dock [parameters]
+
+[+] Parameters:
+	
+	--receptor file.pdbqt			Receptor should be prepared and in pdbqt format.
+	--ligands ./ligands/ 			Ligands folder, all ligands should be in pdbqt format.
+	--config config.txt 			Config file should only contain search box center and size.
+	--output docking_result.txt 		All docking results will be written on the file specified.
+
+[+] Example:
+	
+	EasyDockVina dock --receptor e2cr.pdbqt --ligands ./ligands/ --config config.txt --output results.txt
+
+EOD;
+
+
+$parameters = getopt(null, array("receptor:", "ligands:", "config:", "output:", "help"));
+
+$receptor = $parameters['receptor'];
+$ligands_folder = $parameters['ligands'];
+$config_file = $parameters['config'];
+$dock_result = $parameters['output'];
+
+if(isset($parameters['help'])){
+	die($usage);
+}
+
+
+
+if(!is_file($receptor)){
+	die("[-] Error: receptor file is missing or does not exist, please check it\n");
+}
+if(!is_dir($ligands_folder)){
+	die("[-] Error: ligands folder is missing or does not exist\n");
+}
+if(!is_file($config_file)){
+	die("[-] Error: configuration file is missing or does not exist\n");
+}
+
+$ligands = array_slice(scandir($ligands_folder), 2);
+
+// $dock_result = "Docking_result_".rand(871237,999999).".txt";
+$output_file = fopen($dock_result, "a");
+fwrite($output_file, $banner);
+fwrite($output_file, "\n{+} This file contain docking result of the ".count($ligands)." ligands against the receptor ".$receptor."\n\n");
+$started = "\n[+] Started Docking ".$receptor." with ".count($ligands)." ligands from the folder ".$ligands_folder." at ".date('l jS \of F Y h:i:s A')."\n";
+echo $started;
+fwrite($output_file, $started);
+
+echo "[+] Docking result output file => ".$dock_result."\n";
+
+foreach($ligands as $ligand){
+	
+	$prt = "\n###################################################################\n";
+	$prt .= "[+] Docking Molecule ==> ".$ligand."\n";
+	$prt .= "###################################################################\n";
+
+	echo $prt;
+
+	fwrite($output_file, $prt);
+
+	$dock = `vina.exe --receptor $receptor --ligand {$ligands_folder}/{$ligand} --config $config_file`;
+
+	$lines = explode("\n", $dock);
+
+	echo $lines[27]."\n".$lines[28]."\n".$lines[29]."\n".$lines[30]."\n".$lines[31];
+
+	fwrite($output_file, $lines[27]."\n".$lines[28]."\n".$lines[29]."\n".$lines[30]."\n".$lines[31]);
+
+		
+}
+
+$finished = "\n\n[+] Finished Docking ".$receptor." with ".count($ligands)." ligands from the folder ".$ligands_folder." at ".date('l jS \of F Y h:i:s A')."\n";
+
+echo $finished;
+
+fwrite($output_file, $finished);
+
+fclose($output_file);
+
+?>
