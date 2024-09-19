@@ -1,16 +1,6 @@
-A new GUI version is available with many new features, check out: https://youtube.com/watch?v=oqKsSJ_uWGs
+ check out: 
 <br/>
 # EasyDockVina
-
-/////////////////////////////////////////////////////////////////////////<br/>
-<br/>
-
-        - #EasyDockVina is a free tool to perform multiple receptor-ligand
-          docking with AutoDockVina.	
-        - Programmed By AhmedElTijani AKA S3cr3tSDN	
-<br/>
-/////////////////////////////////////////////////////////////////////////<br/>
-
 
 [+] Tool Usage:
 
@@ -25,7 +15,7 @@ A new GUI version is available with many new features, check out: https://youtub
 
 [+] Example:
 
-        EasyDockVina dock --receptor e2cr.pdbqt --ligands ./ligands/ --config config.txt --output results.txt
+        EasyDockVina dock --receptor 1mq4.pdbqt --ligands ./ligands/ --config config.txt --output results.txt
         
         
 Config.txt file should contain only:<br/>
