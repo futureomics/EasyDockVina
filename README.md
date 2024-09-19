@@ -28,8 +28,6 @@ size_z = ZZZZZZ <br/>
 
 
 this tool will only work on windows machines, linux version is on the way.<br/>
-Please report any bug to s3cr3tsdn@gmail.com<br/>
-if you need help to configure EasyDockVina to run on a webserver, contact me at s3cr3tsdn@gmail.com<br/>
 
 # Citation:
 
