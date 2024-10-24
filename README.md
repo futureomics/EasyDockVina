@@ -1,12 +1,9 @@
- check out: 
-<br/>
 # EasyDockVina
+Future Omics Bioinformatics made easy
+https://youtu.be/pmXxPVcud54?si=XY9It5HSql8XS7h6 
 
-[+] Tool Usage:
 
         EasyDockVina dock [parameters]
-
-[+] Parameters:
 
         --receptor file.pdbqt                   Receptor should be prepared and in pdbqt format.
         --ligands ./ligands/                    Ligands folder, all ligands should be in pdbqt format.
@@ -16,19 +13,9 @@
 [+] Example:
 
         EasyDockVina dock --receptor 1mq4.pdbqt --ligands ./ligands/ --config config.txt --output results.txt
-        
-        
+         
 Config.txt file should contain only:<br/>
-center_x = XXXXXX<br/>
-center_y = YYYYYY<br/>
-center_z = ZZZZZZ<br/>
-size_x = XXXXXX<br/>
-size_y = YYYYYY<br/>
-size_z = ZZZZZZ <br/>
-
 
 this tool will only work on windows machines, linux version is on the way.<br/>
 
-# Citation:
-
-Ahmed ElTijani, Mazin Yousif Alsafi, & Ahmed Faisal Ahmed. (2019, September 21). EasyDockVina: Graphical Interface for Ligand Optimization and High Throughput Virtual Screening with Vina (Version 2.2). Zenodo. http://doi.org/10.5281/zenodo.3732170
+![modelling-fu-7](https://github.com/user-attachments/assets/04e4cb3e-3a4f-40eb-a154-27faee7c95ac)
