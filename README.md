@@ -4,7 +4,8 @@
 ![Static Badge](https://img.shields.io/badge/bioinformatics-computational)
 ![Static Badge](https://img.shields.io/badge/drugs-computational)
 ![Static Badge](https://img.shields.io/badge/receptor-computational)
-![Static Badge](https://img.shields.io/badge/autodock_vina-computational)
+![Static Badge](https://img.shields.io/badge/autodock_vina-computational?style=plastic&labelColor=rgb&color=hex)
+
 
 Future Omics Bioinformatics made easy
 https://youtu.be/pmXxPVcud54?si=XY9It5HSql8XS7h6 
