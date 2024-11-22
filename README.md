@@ -1,13 +1,9 @@
 # EasyDockVina
 
 ![Static Badge](https://img.shields.io/badge/molecular_docking-computational)
-
 ![Static Badge](https://img.shields.io/badge/bioinformatics-computational)
-
 ![Static Badge](https://img.shields.io/badge/drugs-computational)
-
 ![Static Badge](https://img.shields.io/badge/receptor-computational)
-
 ![Static Badge](https://img.shields.io/badge/autodock_vina-computational)
 
 Future Omics Bioinformatics made easy
